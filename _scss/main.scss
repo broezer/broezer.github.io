@@ -1,0 +1,39 @@
+@import "reset";
+@import "syntax";
+
+#stats{
+	display:none;
+}
+
+body {
+    background: white;
+    font-family: "nudista-web", Nudista, sans-serif;
+}
+
+
+.header{
+    position:absolute;
+    top:30px;
+    left:30px;
+    color:black;
+    margin-left:10%;
+    margin-top:10%;
+}
+.header h1, footer{
+    font-weight:300;
+    font-size: 18px;
+    text-transform:uppercase;
+    letter-spacing: 4.75px;
+    line-height: 18px;
+    text-align:left;
+    margin-left:1px;
+}
+.header h2{
+    font-family: "nudista-web", Nudista, sans-serif;
+    font-weight:700;
+    font-size: 36px;
+    color: black;
+    line-height: 35px;
+    margin-bottom:0;
+    text-transform:uppercase;
+}
