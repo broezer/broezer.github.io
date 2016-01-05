@@ -591,7 +591,8 @@ main h1 {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 6.38298%; }
+    width: 6.38298%;
+    margin-right: 2.6%; }
     main h1::before:last-child {
       margin-right: 0; }
 
