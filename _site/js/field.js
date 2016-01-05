@@ -206,5 +206,6 @@ $('canvas').constellation({
 	line: {
 		color: 'rgba(0, 0, 0, .2)'
 	},
-	radius: 600
+	length: 100,
+	radius: 1400
 });

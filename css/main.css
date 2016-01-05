@@ -427,3 +427,11 @@ body {
   line-height: 35px;
   margin-bottom: 0;
   text-transform: uppercase; }
+
+.frame {
+  background: white;
+  position: fixed;
+  margin: 3% 5%;
+  width: 90%;
+  height: 90%;
+  top: 0; }
