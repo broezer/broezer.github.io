@@ -3,6 +3,9 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var rename = require('gulp-rename');
+var wiredep = require('wiredep').stream;
+var replace = require('gulp-replace');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -55,9 +58,32 @@ gulp.task('sass', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch('_scss/**/*.scss', ['sass']);
+    gulp.watch(['*.md','*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
+
+
+gulp.task('bower', function () {
+  gulp.src('./footer.php')
+    .pipe(wiredep({
+      cwd: '././',
+      optional: 'configuration',
+      goes: 'here'
+    }))
+    .pipe(replace(/(<script src=")(bower_components\/)/g, '$1<?php echo get_template_directory_uri(); ?>/$2'))
+    .pipe(gulp.dest('./'));
+
+    gulp.src('./_layouts/default.html')
+      .pipe(wiredep({
+        cwd: '././',
+        optional: 'configuration',
+        goes: 'here'
+      }))
+      .pipe(replace(/(href=")(bower_components\/)/g, '$1<?php echo get_template_directory_uri(); ?>/$2'))
+      .pipe(gulp.dest('./'));
+
+});
+
 
 /**
  * Default task, running just `gulp` will compile the sass,
