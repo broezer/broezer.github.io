@@ -13,7 +13,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+nav {
   font-family: $heading-font-family;
   font-size: $base-font-size;
   line-height: $heading-line-height;
@@ -74,4 +75,9 @@ main p{
   line-height: rem(28);
   @include span-columns(9);
   @include shift(2);
+}
+
+nav{
+  font-size: rem(18);
+  line-height: rem(18);
 }

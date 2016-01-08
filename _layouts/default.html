@@ -8,22 +8,28 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-        <script src="https://use.typekit.net/ptu0nia.js"></script>
-				<script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <script>
+          (function(d) {
+            var config = {
+              kitId: 'ptu0nia',
+              scriptTimeout: 0,
+              async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          })(document);
+        </script>
         <script src="//fast.eager.io/Xl3zRfGpE8.js"></script>
     </head>
     <body>
-        <canvas>
-
-        </canvas>
 
         <div class="site">
+
           <header class="header">
-            <h1>Bruce Moerdjiman</h1>
-            <h2>motion designer &amp;<br/> frontend developer</h2>
+            {% include menu.html %}
           </header>
           <main>
           {{ content }}
+
           </main>
           <footer>
           </footer>
