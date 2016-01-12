@@ -6,6 +6,7 @@ var cp          = require('child_process');
 var rename = require('gulp-rename');
 var wiredep = require('wiredep').stream;
 var replace = require('gulp-replace');
+var minifyCss = require('gulp-minify-css');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -82,6 +83,12 @@ gulp.task('bower', function () {
       .pipe(replace(/(href=")(bower_components\/)/g, '$1<?php echo get_template_directory_uri(); ?>/$2'))
       .pipe(gulp.dest('./'));
 
+});
+
+gulp.task('minify-css', function() {
+  return gulp.src('css/*.css')
+    .pipe(minifyCss({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist'));
 });
 
 
