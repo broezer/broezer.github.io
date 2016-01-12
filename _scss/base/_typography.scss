@@ -22,7 +22,7 @@ nav {
   text-transform:uppercase;
 }
 
-p {
+p, pre {
   margin: 0 0 $small-spacing;
 }
 
@@ -68,13 +68,34 @@ main h1{
     @include span-columns(1);
     margin-right: 2.6%;
   }
+  &.post{
+    margin-bottom:0;
+  }
 }
 
-main p{
+main h2{
+  @include shift(2);
+}
+
+main p, .highlight{
   font-size: rem(18);
   line-height: rem(28);
   @include span-columns(9);
   @include shift(2);
+}
+
+main p.meta{
+  font-family: "nudista-web", sans-serif;
+  font-weight:300;
+  font-size: rem(16);
+  line-height: rem(16);
+  color:$black;
+}
+
+.highlight pre, p code{
+  padding:rem(5) rem(10);
+  background:$light-gray;
+  border-radius: 2px;
 }
 
 nav{
