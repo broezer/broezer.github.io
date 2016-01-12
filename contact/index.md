@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bruce Moerdjiman
+title: Contact - Bruce Moerdjiman
 ---
 
 #Contact

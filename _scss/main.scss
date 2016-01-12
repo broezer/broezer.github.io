@@ -31,6 +31,12 @@ body {
 		opacity:1;
   }
 
+img, picture{
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+  display: block;
+}
 canvas{
 	position:fixed;
 	top:0;
@@ -42,7 +48,7 @@ canvas{
 
 }
 
-.site, main{
+.site, main, article{
 	@include outer-container();
 }
 
