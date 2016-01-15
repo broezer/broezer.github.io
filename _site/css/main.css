@@ -639,7 +639,9 @@ body {
   height: 100%;
   color: rgba(0, 0, 0, 0.8);
   -webkit-font-smoothing: antialiased;
-  transition: opacity 300ms ease; }
+  transition: opacity 300ms ease;
+  visibility: hidden;
+  opacity: 0; }
 
 .wf-loading body {
   visibility: hidden;

@@ -64,6 +64,10 @@ gulp.task('watch', function () {
 });
 
 
+/**
+ * Automate bower files into template -- Need to configure more
+ */
+
 gulp.task('bower', function () {
   gulp.src('./footer.php')
     .pipe(wiredep({
