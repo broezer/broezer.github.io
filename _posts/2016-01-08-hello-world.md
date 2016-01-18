@@ -21,4 +21,8 @@ De site is gebouwd met [Jekll](http://jekyllrb.com/) & [GulpJS](http://http://gu
 
 Mocht je vragen of opmerkingen hebben, contact me via [E-mail](mailto:bruce@moerdjiman.com) of [Twitter](https://twitter.com/broezer).
 
+<<<<<<< HEAD
 
+=======
+![Bruce]({{site.baseurl}}/assets/img/twentysix.jpg)
+>>>>>>> parent of 4ed7ce0... Updated 2016-01-08-hello-world.md
