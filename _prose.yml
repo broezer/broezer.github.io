@@ -13,3 +13,11 @@ prose:
       field:
         element: "text"
         value: "CURRENT_DATETIME"
+    - name: "creation_date"
+        field:
+          element: "hidden"
+          value: "CURRENT_DATETIME"
+    - name: "publish_date"
+      field:
+        element: "text"
+        placeholder: "yyyy-mm-dd"
