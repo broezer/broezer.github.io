@@ -18,5 +18,5 @@ De site is gebouwd met [Jekll](http://jekyllrb.com/) & [GulpJS](http://http://gu
 
 Mocht je vragen of opmerkingen hebben, contact me via [E-mail](mailto:bruce@moerdjiman.com) of [Twitter](https://twitter.com/broezer).
 
-![Bruce](/_posts/twentysix.jpg)
+![Bruce](/assets/img/twentysix.jpg)
 
