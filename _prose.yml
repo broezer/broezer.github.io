@@ -7,9 +7,3 @@ prose:
     - _config.yml
     - /_layouts
     - /_includes
-  metadata:
-    _posts:
-      - name: "date"
-          field:
-            element: "hidden"
-            value: "CURRENT_DATETIME"
