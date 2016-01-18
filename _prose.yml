@@ -1,0 +1,9 @@
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://broezer.github.io/'
+  media: 'assets/img'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
