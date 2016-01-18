@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Hello World!"
-date: 2016-01-08 09:11:03
+date: {}
 categories: null
 test: Hello World
 published: true
 ---
+
 
 
 Welkom op mijn eerste journal. Dit jaar ga ik een poging wagen om meer te schrijven over mijn werkzaamheden, wat ik tegen kom en wat als inspiratie kan dienen.
@@ -17,3 +18,5 @@ Voorlopig zal ik in het Nederlands schrijven, maar wellicht zitten er ook posts 
 De site is gebouwd met [Jekll](http://jekyllrb.com/) & [GulpJS](http://http://gulpjs.com/). Hosting van de site is op [Github](https://github.com/). Over de bouw van de site zal ik een uitgebreider verhaal schrijven.
 
 Mocht je vragen of opmerkingen hebben, contact me via [E-mail](mailto:bruce@moerdjiman.com) of [Twitter](https://twitter.com/broezer).
+
+![Bruce]({{site.baseurl}}/assets/img/twentysix.jpg)
