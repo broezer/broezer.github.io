@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Hello World!"
-date: 2016-01-08T00:00:00.000Z
+date: {}
 categories: null
 test: Hello World
 published: true
 ---
+
 
 
 
@@ -20,4 +21,4 @@ De site is gebouwd met [Jekll](http://jekyllrb.com/) & [GulpJS](http://http://gu
 
 Mocht je vragen of opmerkingen hebben, contact me via [E-mail](mailto:bruce@moerdjiman.com) of [Twitter](https://twitter.com/broezer).
 
-![screenshot.jpg]({{site.baseurl}}/assets/img/screenshot.jpg)
+
