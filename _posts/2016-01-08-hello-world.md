@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Hello World!"
-date: {}
+date: 2016-01-08T00:00:00.000Z
 categories: null
 test: Hello World
 published: true
 ---
+
 
 
 
