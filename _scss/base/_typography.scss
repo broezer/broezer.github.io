@@ -6,6 +6,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+
 }
 
 h1,
@@ -58,6 +59,11 @@ main h1{
   font-size: rem(24);
   line-height: rem(29);
   @include shift(1);
+  @include media ($medium-screen-down){
+    font-size: rem(24/1.5);
+    line-height: rem(29/1.5);
+    @include shift(0);
+  }
   &::before{
     display: block;
     height: 0;
@@ -67,6 +73,11 @@ main h1{
     float:left;
     @include span-columns(1);
     margin-right: 2.6%;
+    @include media ($medium-screen-down){
+      width: 3.2%;
+      margin-left: 3.2%;
+      //margin-right: 0;
+    }
   }
   &.post{
     margin-bottom:0;
@@ -75,13 +86,23 @@ main h1{
 
 main h2{
   @include shift(2);
+  @include media ($medium-screen-down){
+    @include shift(2);
+  }
 }
 
 main p, .highlight{
-  font-size: rem(18);
-  line-height: rem(28);
+
+
   @include span-columns(9);
   @include shift(2);
+  @include media ($medium-screen-down){
+    font-size: rem(18/1.5);
+    line-height: rem(28/1.2);
+    @include span-columns(10);
+    @include shift(1);
+
+  }
 }
 
 main p.meta{
@@ -90,6 +111,11 @@ main p.meta{
   font-size: rem(16);
   line-height: rem(16);
   color:$black;
+  @include media ($medium-screen-down){
+    font-size: rem(16/1.5);
+    line-height: rem(16/1.2);
+    @include shift(0);
+  }
 }
 
 .highlight pre, p code{

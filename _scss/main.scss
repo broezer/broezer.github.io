@@ -22,6 +22,7 @@ body {
 		@include transition(opacity 300ms ease);
 		visibility: hidden;
 		opacity:0;
+
 }
 
 .wf-loading body{
@@ -47,6 +48,10 @@ canvas{
 	left:0;
 }
 
+.site{
+	text-align:left;
+}
+
 .site,header, main{
 	position:relative;
 
@@ -69,6 +74,10 @@ header{
     color: $black;
 		margin-top:rem(90);
 		margin-bottom:rem(45);
+		@include media ($medium-screen-down) {
+			margin-top:rem(60);
+			margin-bottom:rem(30);
+		}
 }
 
 
@@ -84,6 +93,11 @@ h1.logo{
     margin-left:1px;
 		position:relative;
 		display:block;
+		@include media ($medium-screen-down) {
+			font-size: (18px / 1.5);
+			letter-spacing: (4.75px / 1.5);
+	    line-height: (18px / 1.5);
+		}
 }
 h2.logo{
     font-family: "nudista-web", sans-serif;
@@ -94,10 +108,19 @@ h2.logo{
     text-transform:uppercase;
 		position:relative;
 		display:block;
+		@include media ($medium-screen-down) {
+			font-size: (36px / 1.5);
+	    line-height: (35px / 1.5);
+		}
 }
 
 nav{
 	margin-top:rem(48);
+	@include media ($medium-screen-down) {
+		margin-top:rem(30);
+		font-size:75%;
+	}
+
 }
 nav ul{
 	list-style:none;

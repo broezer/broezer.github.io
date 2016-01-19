@@ -580,6 +580,11 @@ main h1 {
   font-size: 1.5rem;
   line-height: 1.8125rem;
   margin-left: 8.51064%; }
+  @media screen and (max-width: 600px) {
+    main h1 {
+      font-size: 1rem;
+      line-height: 1.20833rem;
+      margin-left: 0%; } }
   main h1::before {
     display: block;
     height: 0;
@@ -594,15 +599,20 @@ main h1 {
     margin-right: 2.6%; }
     main h1::before:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 600px) {
+      main h1::before {
+        width: 3.2%;
+        margin-left: 3.2%; } }
   main h1.post {
     margin-bottom: 0; }
 
 main h2 {
   margin-left: 17.02128%; }
+  @media screen and (max-width: 600px) {
+    main h2 {
+      margin-left: 17.02128%; } }
 
 main p, .highlight {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
   float: left;
   display: block;
   margin-right: 2.12766%;
@@ -610,6 +620,17 @@ main p, .highlight {
   margin-left: 17.02128%; }
   main p:last-child, .highlight:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 600px) {
+    main p, .highlight {
+      font-size: 0.75rem;
+      line-height: 1.45833rem;
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 82.97872%;
+      margin-left: 8.51064%; }
+      main p:last-child, .highlight:last-child {
+        margin-right: 0; } }
 
 main p.meta {
   font-family: "nudista-web", sans-serif;
@@ -617,6 +638,11 @@ main p.meta {
   font-size: 1rem;
   line-height: 1rem;
   color: rgba(0, 0, 0, 0.8); }
+  @media screen and (max-width: 600px) {
+    main p.meta {
+      font-size: 0.66667rem;
+      line-height: 0.83333rem;
+      margin-left: 0%; } }
 
 .highlight pre, p code {
   padding: 0.3125rem 0.625rem;
@@ -662,6 +688,9 @@ canvas {
   top: 0;
   left: 0; }
 
+.site {
+  text-align: left; }
+
 .site, header, main {
   position: relative; }
 
@@ -690,6 +719,10 @@ header {
   color: rgba(0, 0, 0, 0.8);
   margin-top: 5.625rem;
   margin-bottom: 2.8125rem; }
+  @media screen and (max-width: 600px) {
+    .header {
+      margin-top: 3.75rem;
+      margin-bottom: 1.875rem; } }
 
 h1.logo {
   font-family: "nudista-web", sans-serif;
@@ -702,6 +735,11 @@ h1.logo {
   margin-left: 1px;
   position: relative;
   display: block; }
+  @media screen and (max-width: 600px) {
+    h1.logo {
+      font-size: 12px;
+      letter-spacing: 3.16667px;
+      line-height: 12px; } }
 
 h2.logo {
   font-family: "nudista-web", sans-serif;
@@ -712,9 +750,17 @@ h2.logo {
   text-transform: uppercase;
   position: relative;
   display: block; }
+  @media screen and (max-width: 600px) {
+    h2.logo {
+      font-size: 24px;
+      line-height: 23.33333px; } }
 
 nav {
   margin-top: 3rem; }
+  @media screen and (max-width: 600px) {
+    nav {
+      margin-top: 1.875rem;
+      font-size: 75%; } }
 
 nav ul {
   list-style: none; }
