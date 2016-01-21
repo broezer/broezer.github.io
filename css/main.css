@@ -653,6 +653,39 @@ nav {
   font-size: 1.125rem;
   line-height: 1.125rem; }
 
+.videoContainer {
+  margin-bottom: 1.3125rem;
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 74.46809%;
+  margin-left: 17.02128%; }
+  .videoContainer:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 600px) {
+    .videoContainer {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 82.97872%;
+      margin-left: 8.51064%; }
+      .videoContainer:last-child {
+        margin-right: 0; } }
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 52.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 #stats {
   display: none; }
 
