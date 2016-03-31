@@ -17,11 +17,13 @@ h1{
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/animate.css">
+
 
 </head>
 
 <body>
-  <div class="site">
+  <div class="site m-scene" id="main">
     <header class="header">
       <h1 class="logo">Bruce Moerdjiman</h1>
 <h2 class="logo">motion designer &amp;<br/> frontend developer</h2>
@@ -34,7 +36,7 @@ h1{
 </nav>
 
     </header>
-    <main>
+    <main class="scene_element scene_element--fadein">
     <h1>Contact</h1>
 
 <p><strong>Bruce Moerdjiman</strong><br>
@@ -56,7 +58,11 @@ bruce@moerdjiman.com<br>
 
 </script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <script async src="/js/jquery.min.js"></script>
+  <script async src="/js/jquery.smoothState.min.js"></script>
+  <script async src="/js/functions.js"></script>
+
+  <script async src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script>
   WebFont.load({
     google: {
