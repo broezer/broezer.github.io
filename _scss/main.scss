@@ -20,19 +20,19 @@ body {
 		color:$black;
 		-webkit-font-smoothing: antialiased;
 		@include transition(opacity 300ms ease);
-		//visibility: hidden;
-		//opacity:0;
+		visibility: hidden;
+		opacity:0;
 
 }
 
 .wf-loading body{
-		//visibility: hidden;
-		//opacity:0;
+		visibility: hidden;
+		opacity:0;
 }
 
 .wf-active body{
-    //visibility: visible;
-		//opacity:1;
+    visibility: visible;
+		opacity:1;
 
   }
 

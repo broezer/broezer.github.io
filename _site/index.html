@@ -38,7 +38,7 @@ h1{
 
     </header>
     <main class="scene_element scene_element--fadein">
-    <h1>Hi there !</h1>
+    <h1 id="hi-there-">Hi there !</h1>
 
 <p>I am Bruce Moerdjiman, specialised in creating digital products with <strong><em>code</em></strong> and <strong><em>motion</em></strong>, sometimes mixed with an <strong><em>analog</em></strong> touch.</p>
 
@@ -47,10 +47,6 @@ h1{
 <p>Making motion based media as a <em>Director</em>, <em>Motion Designer</em> &amp; <em><strong>VJ</strong></em>.</p>
 
 <canvas></canvas>
-<script async src='http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'></script>
-<script async src='http://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js'></script>
-<script async src='/js/field.js'></script>
-
 
     </main>
     <footer>
@@ -79,12 +75,14 @@ h1{
       $script('functions.js')
     })
 
-    //$script.get('http://example.com/base.js', function () {
 
-    //})
+    
+      $script.get('http://example.com/base.js', function () {
+        $script('field.js')
+      })
+    
 
-    </script>
-
+  </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script>
@@ -96,6 +94,8 @@ h1{
        id: 'ptu0nia'
      }
   });
-</script>
+  </script>
+
+
 </body>
 </html>

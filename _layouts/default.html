@@ -23,12 +23,14 @@
       $script('functions.js')
     })
 
-    //$script.get('http://example.com/base.js', function () {
 
-    //})
+    {% if page.url == "/" %}
+      $script.get('http://example.com/base.js', function () {
+        $script('field.js')
+      })
+    {% endif %}
 
-    </script>
-
+  </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script>
@@ -40,6 +42,8 @@
        id: 'ptu0nia'
      }
   });
-</script>
+  </script>
+
+
 </body>
 </html>
