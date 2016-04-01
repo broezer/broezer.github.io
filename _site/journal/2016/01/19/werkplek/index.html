@@ -12,9 +12,7 @@
 </style>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/animate.css">
-
+    
 
 </head>
 
@@ -79,10 +77,13 @@
     // load all files asynchronously!
     var script = $script;
     script.path('/js/');
-    $script('jquery.min.js', 'jquery')
-    $script('jquery.smoothState.min.js')
-    $script.ready('jquery.smoothState.min', function() {
-      $script('functions.js')
+    $script('jquery.min.js', 'jquery');
+
+    $script.ready('jquery', function() {
+      $script('jquery.smoothState.min.js')
+      $script.ready('jquery.smoothState.min', function() {
+        $script('functions.js')
+      })
     })
 
     

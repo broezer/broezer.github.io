@@ -17,14 +17,17 @@
     // load all files asynchronously!
     var script = $script;
     script.path('/js/');
-    $script('jquery.min.js', 'jquery')
-    $script('jquery.smoothState.min.js')
-    $script.ready('jquery.smoothState.min', function() {
-      $script('functions.js')
+    $script('jquery.min.js', 'jquery');
+
+    $script.ready('jquery', function() {
+      $script('jquery.smoothState.min.js')
+      $script.ready('jquery.smoothState.min', function() {
+        $script('functions.js')
+      })
     })
 
     {% if page.url == "/" %}
-      $script.get('http://example.com/base.js', function () {
+      $script.get('http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js', function () {
         $script('field.js')
       })
     {% endif %}
