@@ -3,7 +3,7 @@ layout: default
 title: Contact - Bruce Moerdjiman
 ---
 
-#Contact
+# Contact
 
 **Bruce Moerdjiman**  
 bruce@moerdjiman.com  
