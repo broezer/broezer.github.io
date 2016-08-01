@@ -33,7 +33,7 @@ document.body.appendChild(stats.domElement);
 			context = canvas.getContext('2d'),
 			defaults = {
 				star: {
-					color: 'rgba(255, 255, 255, .5)',
+					color: 'rgba(255, 255, 255, 10)',
 					width: 1
 				},
 				line: {
@@ -199,13 +199,24 @@ document.body.appendChild(stats.domElement);
 })($, window);
 
 // Init plugin
-$('canvas').constellation({
+$('canvas.rma, canvas.woordfruit').constellation({
 	star: {
 		width: 3,
-		color: 'rgba(0,0,0, .5)'
+		color: 'rgba(255,255,255, 1)'
 	},
 	line: {
-		color: 'rgba(0, 0, 0, .2)'
+		color: 'rgba(255, 255, 255, 1)'
+	},
+	length: 100,
+	radius: 1400
+});
+$('canvas.home').constellation({
+	star: {
+		width: 3,
+		color: 'rgba(0,0,0, 0.2)'
+	},
+	line: {
+		color: 'rgba(0, 0, 0, 0.2)'
 	},
 	length: 100,
 	radius: 1400

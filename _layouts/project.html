@@ -1,0 +1,32 @@
+{% include top.html %}
+<body class="m-scene" id="main">
+    {% include nav-project.html %}
+
+    <main class="scene_element scene_element--fadein project">
+      <section class="project__hero">
+        <canvas class="{{ page.canvas-class }}"></canvas>
+        <div class="hero-image" style="background-image:url('{{ page.hero-image }}')"></div>
+      </section>
+      <section class="project__content">
+
+        {{ content }}
+
+      </section>
+      <footer class="footer-wrapper">
+        <div class="footer">
+        {% include menu.html %}
+        </div>
+      </footer>
+
+    </main>
+
+  {% include analytics.html %}
+  {% include scripts.html %}
+
+
+
+
+
+
+</body>
+</html>

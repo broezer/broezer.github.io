@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contact - Bruce Moerdjiman
+title: Contact
 ---
 
 # Contact
@@ -8,3 +8,5 @@ title: Contact - Bruce Moerdjiman
 **Bruce Moerdjiman**  
 bruce@moerdjiman.com  
 +31 (6) 511 84 619
+
+<div id="map" class="content"></div>

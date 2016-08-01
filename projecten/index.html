@@ -1,0 +1,15 @@
+---
+layout: default
+title: Projecten
+---
+
+
+{% for post in site.projecten %}
+
+  <article>
+    <h1 class="post">{{ post.title }}</h1>
+    <p>
+      <a href="{{ post.url }}" title="{{ post.title }}">Bekijk Project</a>
+    </p>
+  </article>
+{% endfor %}

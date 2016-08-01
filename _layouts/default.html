@@ -1,4 +1,5 @@
 {% include top.html %}
+
 <body>
   <div class="site m-scene" id="main">
     <header class="header scene_element scene_element--fadein">
@@ -7,46 +8,12 @@
     <main class="scene_element scene_element--fadein">
     {{ content }}
     </main>
-    <footer>
-    </footer>
+    
   </div>
+
   {% include analytics.html %}
-  <script src="/js/script.min.js"></script>
-
-  <script type="text/javascript">
-    // load all files asynchronously!
-    var script = $script;
-    script.path('/js/');
-    $script('jquery.min.js', 'jquery');
-
-    $script.ready('jquery', function() {
-      $script('jquery.smoothState.min.js')
-      $script.ready('jquery.smoothState.min', function() {
-        $script('functions.js')
-      })
-    })
-
-    {% if page.url == "/" %}
-      $script.get('http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js', function () {
-        $script('field.js')
-      })
-    {% endif %}
-
-    $script.get('https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js', function () {
-      WebFont.load({
-        google: {
-          families: ['Montserrat', 'Lora']
-        },
-        typekit: {
-           id: 'ptu0nia'
-         }
-      });
-    })
-
-  </script>
-
-
-
+  {% include scripts.html %}
 
 </body>
+
 </html>

@@ -6,3 +6,12 @@ permalink: /journal/:year/:month/:day/:title/
 port: '3000'
 host: 'localhost'
 baseurl: 'http://broezer.github.io'
+collections:
+  projecten:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: projecten
+    values:
+      layout: project

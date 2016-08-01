@@ -41,11 +41,82 @@ img, picture{
 	margin-right:auto;
 	position: relative;
   display: block;
+	width: 100%;
+	height: auto;
 }
-canvas{
+
+video{
+	  display: block;
+		width: 100%;
+		height: auto;
+}
+
+canvas.rma{
+	background:#b28e15;
 	position:fixed;
+	z-index:-1;
+}
+
+canvas.woordfruit{
+	background:#000;
+	position:fixed;
+		z-index:-1;
+}
+
+canvas, .hero-image{
+	position:absolute;
 	top:0;
 	left:0;
+	width:100%;
+	height:100%;
+}
+
+canvas.rma{
+	//position:fixed;
+}
+
+canvas.home{
+	position:fixed;
+	z-index:-1;
+}
+.hero-image{
+	background-size:cover;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	background-attachment:fixed;
+	z-index:10;
+	//height: 100vh;
+}
+
+.footer-wrapper{
+	height:rem(250);
+	width:100%;
+	position:fixed;
+	bottom:0;
+	//background:gray;
+	//color:white;
+	text-align:left;
+
+
+}
+
+.footer-wrapper{
+	height:auto;
+	background:white;
+}
+
+.footer{
+	border-top:none;
+	z-index:10;
+	h1{
+		&:before{
+			display:none;
+		}
+	}
+	h2{
+		margin-left:0;
+	}
 }
 
 .site{
@@ -57,11 +128,118 @@ canvas{
 
 }
 
+section.intro, section.more{
+	padding-top:rem(60);
+	padding-bottom:rem(60);
+	@include outer-container();
+}
+
+section.media{
+	position:relative;
+	display:inline-block;
+	width:100%;
+	clear:both;
+}
+
+section.media-small{
+	/*
+	width:90%;
+	height:auto;
+	margin-left:5%;
+	margin-right:5%;
+	position:relative;
+	display: block;
+	*/
+	@include outer-container();
+	max-width:85%;
+
+}
+
+section.media-smaller{
+
+	@include outer-container();
+	max-width:50%;
+
+}
+
+.col{
+	width:50%;
+	float:left;
+	p{
+		width:100%;
+		margin-left:0;
+		font-size:rem(18);
+		line-height:rem(34);
+		margin-top:rem(0);
+		font-weight:300;
+	}
+}
+
+.col-wide{
+	width:100%;
+	p{
+		@include span-columns(8);
+		@include shift(2);
+	}
+}
+
 .site, main, article{
 	@include outer-container();
 }
 
-header{
+div.image, figure.image{
+	width:50%;
+	float:left;
+	p{
+		display:block;
+		width:100%;
+		margin:0;
+	}
+}
+
+.image-wide{
+	p{
+		display:block;
+		width:100%;
+		margin:0;
+	}
+}
+
+video{
+	max-width:100%;
+}
+
+main.project{
+	position:relative;
+	display:block;
+	width:100%;
+	max-width:100%;
+	z-index:99;
+	background:white;
+	text-align: left;
+	margin-bottom:rem(250);
+	background:white;
+
+}
+
+.project__hero{
+	height:100%;
+	width:100%;
+	position:relative;
+	min-height:400px;
+	height: 100vh;
+}
+
+.project__content{
+	padding-top:rem(30);
+	position:relative;
+	background: white;
+	box-shadow: -6px 2px 43px -3px rgba(0,0,0,0.57);
+	z-index:10;
+
+}
+
+header, .footer{
 	z-index:1;
 	margin:0;
 	padding:0;
@@ -70,7 +248,7 @@ header{
 }
 
 
-.header{
+.header, .footer{
     color: $black;
 		margin-top:rem(90);
 		margin-bottom:rem(45);
@@ -157,6 +335,44 @@ nav ul{
 	}
 }
 
+
+nav.nav-projects{
+	width:100%;
+	height:rem(50);
+	background:white;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:999;
+	margin-top:0;
+	padding-top:rem(30);
+	padding-bottom:rem(50);
+	li{
+		list-style:none;
+	}
+}
+
+/**
+ * Note: I have omitted any vendor-prefixes for clarity.
+ * Adding them is left as an exercise for the reader.
+ */
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+
+#map{
+	min-height:rem(350);
+	@include span-columns(8);
+	@include shift(2)
+}
 
 /*
  * CSS Animations
