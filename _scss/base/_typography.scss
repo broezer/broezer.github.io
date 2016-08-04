@@ -85,6 +85,7 @@ main h1{
 }
 
 main h2{
+  float:left;
   @include shift(2);
   @include media ($medium-screen-down){
     @include shift(2);

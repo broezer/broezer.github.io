@@ -607,6 +607,7 @@ main h1 {
     margin-bottom: 0; }
 
 main h2 {
+  float: left;
   margin-left: 17.02128%; }
   @media screen and (max-width: 600px) {
     main h2 {
