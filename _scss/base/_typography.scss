@@ -20,7 +20,7 @@ nav {
   font-size: $base-font-size;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
-  text-transform:uppercase;
+  //text-transform:uppercase;
 }
 
 p, pre {
@@ -56,7 +56,7 @@ picture {
 
 /*Custom*/
 main h1{
-  font-size: rem(24);
+  font-size: rem(21);
   line-height: rem(29);
   @include shift(1);
   @include media ($medium-screen-down){
@@ -72,7 +72,7 @@ main h1{
     margin-top: 19px;
     float:left;
     @include span-columns(1);
-    margin-right: 2.6%;
+    margin-right: 2.9%;
     @include media ($medium-screen-down){
       width: 3.2%;
       margin-left: 3.2%;
