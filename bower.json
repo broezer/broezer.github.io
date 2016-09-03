@@ -27,6 +27,6 @@
     "neat": "~1.7.2",
     "smoothstate": "~0.7.2",
     "jquery": "~2.2.2",
-    "headroom.js": "https://npmcdn.com/headroom.js/bower.zip"
+    "headroom.js": "https://unpkg.com/headroom.js/bower.zip"
   }
 }
