@@ -780,6 +780,9 @@ canvas.home {
 .site, header, main {
   position: relative; }
 
+main {
+  padding-bottom: 7.5rem; }
+
 section.intro, section.more {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
