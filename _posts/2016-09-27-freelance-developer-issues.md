@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Freelance Developer Issues
-date:   2016-04-11
+date:   2016-09-27
 categories:
 published: draft
 ---
