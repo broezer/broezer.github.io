@@ -55,6 +55,10 @@ picture {
 
 
 /*Custom*/
+canvas.home{
+  opacity:0.4;
+}
+
 main h1{
   font-size: rem(21);
   line-height: rem(29);
@@ -96,7 +100,7 @@ main p, .highlight{
 
 
   @include span-columns(9);
-  @include shift(2);
+  @include shift(1);
   @include media ($medium-screen-down){
     font-size: rem(18/1.5);
     line-height: rem(28/1.2);

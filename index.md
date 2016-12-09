@@ -5,11 +5,9 @@ published: true
 ---
 
 
-# Hi there !
 
+bruce@moerdjiman.com  
++31 (6) 511 84 619
 
-I am Bruce Moerdjiman, specialised in creating digital products with ***code*** and ***motion***, sometimes mixed with an ***analog*** touch.
-
-Creative development using technologies such as **HTML**, **CSS3**, **SASS**, **JavaScript**, **PHP**, **Arduino**, **Processing**, **Open Frameworks**.
-
-Making motion based media as a *Director*, *Motion Designer* & _**VJ**_.
+Goudsesingel 136 Desk 08  
+3011 KD Rotterdam

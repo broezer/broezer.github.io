@@ -575,6 +575,9 @@ picture {
   max-width: 100%; }
 
 /*Custom*/
+canvas.home {
+  opacity: 0.4; }
+
 main h1 {
   font-size: 1.3125rem;
   line-height: 1.8125rem;
@@ -617,7 +620,7 @@ main p, .highlight {
   display: block;
   margin-right: 2.12766%;
   width: 74.46809%;
-  margin-left: 17.02128%; }
+  margin-left: 8.51064%; }
   main p:last-child, .highlight:last-child {
     margin-right: 0; }
   @media screen and (max-width: 600px) {
